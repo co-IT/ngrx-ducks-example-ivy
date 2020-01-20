@@ -1,22 +1,16 @@
-import { Injectable } from '@angular/core';
 import {
   bindSelectors,
-  connect,
   createDuck,
   dispatch,
   getActions,
   getReducer,
+  StoreFacade,
   usePick
 } from '@co-it/ngrx-ducks';
-import { Store } from '@ngrx/store';
 import * as selectors from './counter.selectors';
 import { CounterState } from './counter.state';
 
-@Injectable({
-  providedIn: 'root',
-  useFactory: (store: Store<unknown>) => connect(CounterFacade, store),
-  deps: [Store]
-})
+@StoreFacade()
 export class CounterFacade {
   pick = usePick();
   select = bindSelectors({
