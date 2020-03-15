@@ -1028,9 +1028,9 @@
     to-fast-properties "^2.0.0"
 
 "@co-it/ngrx-ducks-schematics@^9.0.0-rc.0":
-  version "8.2.0"
-  resolved "https://registry.yarnpkg.com/@co-it/ngrx-ducks-schematics/-/ngrx-ducks-schematics-8.2.0.tgz#e45a2ecf047db5763a5e505dcee87358c84090fa"
-  integrity sha512-ISk/Y9J7a05aKLrrFo0RoIeGXIYr9dmTNV8BrcFPmGpfqg6BicbCI/2pDif8LnoIoPZOuFcJ6mRDzjh/FI70Qw==
+  version "9.0.0-rc.0"
+  resolved "https://registry.yarnpkg.com/@co-it/ngrx-ducks-schematics/-/ngrx-ducks-schematics-9.0.0-rc.0.tgz#356a202e149c7310e7fe024e6f27373b80e4e696"
+  integrity sha512-agvVzKUhzSi65Dviq0gHymjVEL2BEPNifMLmP4WxUzhftgQQ9F0ax5TgempdjdPVShito9vyPsMWO8qO9PXWPg==
   dependencies:
     "@angular-devkit/core" "^8.0.0"
     "@angular-devkit/schematics" "^8.0.0"
@@ -1327,9 +1327,9 @@ accepts@~1.3.4, accepts@~1.3.5, accepts@~1.3.7:
     negotiator "0.6.2"
 
 acorn@^6.2.1:
-  version "6.4.0"
-  resolved "https://registry.yarnpkg.com/acorn/-/acorn-6.4.0.tgz#b659d2ffbafa24baf5db1cdbb2c94a983ecd2784"
-  integrity sha512-gac8OEcQ2Li1dxIEWGZzsp2BitJxwkwcOm0zHAJLcPJaVvm58FRnk6RkuLRpU1EujipU2ZFODv2P9DLMfnV8mw==
+  version "6.4.1"
+  resolved "https://registry.yarnpkg.com/acorn/-/acorn-6.4.1.tgz#531e58ba3f51b9dacb9a6646ca4debf5b14ca474"
+  integrity sha512-ZVA9k326Nwrj3Cj9jlh3wGFutC2ZornPNARZwsNYqQYgN0EsV2d53w5RN/co65Ohn4sUAUtb1rSUAOD6XN9idA==
 
 acorn@^7.1.0:
   version "7.1.0"
