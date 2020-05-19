@@ -5,8 +5,8 @@ import {
   getActions,
   getReducer,
   StoreFacade,
-  usePick
-} from '@co-it/ngrx-ducks';
+  usePick,
+} from '@ngrx-ducks/core';
 import * as selectors from './counter.selectors';
 import { CounterState } from './counter.state';
 
@@ -15,7 +15,7 @@ export class CounterFacade {
   pick = usePick();
   select = bindSelectors({
     currentCount: selectors.currentCount,
-    isLoading: selectors.isLoading
+    isLoading: selectors.isLoading,
   });
 
   /**
@@ -34,7 +34,7 @@ export class CounterFacade {
     (state: CounterState, payload: number) => {
       return {
         ...state,
-        count: state.count + payload
+        count: state.count + payload,
       };
     }
   );
@@ -44,7 +44,7 @@ export class CounterFacade {
     (state: CounterState, payload: number) => {
       return {
         ...state,
-        count: state.count - payload
+        count: state.count - payload,
       };
     }
   );
@@ -55,7 +55,7 @@ export class CounterFacade {
       return {
         ...state,
         count: payload,
-        isLoading: false
+        isLoading: false,
       };
     }
   );
@@ -63,7 +63,7 @@ export class CounterFacade {
 
 const initialState = {
   count: 0,
-  isLoading: true
+  isLoading: true,
 };
 
 export const counterReducer = getReducer(initialState, CounterFacade);
