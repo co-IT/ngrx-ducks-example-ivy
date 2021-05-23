@@ -59,6 +59,13 @@ export class CounterFacade {
       };
     }
   );
+
+  math = {
+    square: createDuck('[Counter] Square', (state) => {
+      console.log('adasdsa');
+      return state;
+    }),
+  };
 }
 
 const initialState = {

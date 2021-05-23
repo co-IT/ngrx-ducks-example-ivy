@@ -5,7 +5,7 @@ import { CounterFacade, currentCountPlus2 } from './store/counter';
 @Component({
   selector: 'counter',
   templateUrl: './counter.component.html',
-  styleUrls: ['./counter.component.scss']
+  styleUrls: ['./counter.component.scss'],
 })
 export class CounterComponent {
   count$: Observable<number>;
@@ -20,7 +20,7 @@ export class CounterComponent {
     this.isLoading$ = this.counter.select.isLoading;
 
     this.countPlus2$ = this.counter.pick(currentCountPlus2, {
-      offset: 2
+      offset: 2,
     });
   }
 
@@ -30,5 +30,6 @@ export class CounterComponent {
 
   decrement() {
     this.counter.decrement.dispatch(1);
+    this.counter.math.square.dispatch();
   }
 }
