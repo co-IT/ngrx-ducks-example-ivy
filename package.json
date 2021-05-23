@@ -11,31 +11,31 @@
   },
   "private": true,
   "dependencies": {
-    "@angular/animations": "9.1.7",
-    "@angular/common": "9.1.7",
-    "@angular/compiler": "9.1.7",
-    "@angular/core": "9.1.7",
-    "@angular/forms": "9.1.7",
-    "@angular/platform-browser": "9.1.7",
-    "@angular/platform-browser-dynamic": "9.1.7",
-    "@angular/router": "9.1.7",
-    "@ngrx/store": "9.1.2",
-    "@ngrx/store-devtools": "9.1.2",
-    "@ngrx/effects": "9.1.2",
+    "@angular/animations": "12.0.1",
+    "@angular/common": "12.0.1",
+    "@angular/compiler": "12.0.1",
+    "@angular/core": "12.0.1",
+    "@angular/forms": "12.0.1",
+    "@angular/platform-browser": "12.0.1",
+    "@angular/platform-browser-dynamic": "12.0.1",
+    "@angular/router": "12.0.1",
+    "@ngrx/store": "12.0.0",
+    "@ngrx/store-devtools": "12.0.0",
+    "@ngrx/effects": "12.0.0",
     "@ngrx-ducks/core": "9.2.1",
     "rxjs": "6.5.5",
     "tslib": "2.0.0",
-    "zone.js": "0.10.3"
+    "zone.js": "0.11.4"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "0.901.6",
-    "@angular/cli": "9.1.6",
-    "@angular/compiler-cli": "9.1.7",
-    "@angular/language-service": "9.1.7",
+    "@angular-devkit/build-angular": "12.0.1",
+    "@angular/cli": "12.0.1",
+    "@angular/compiler-cli": "12.0.1",
+    "@angular/language-service": "12.0.1",
     "@types/node": "^12.11.1",
     "codelyzer": "5.2.2",
     "ts-node": "8.10.1",
     "tslint": "6.1.2",
-    "typescript": "3.7.5"
+    "typescript": "4.2.4"
   }
 }
