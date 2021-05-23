@@ -1353,10 +1353,12 @@
     merge-source-map "^1.1.0"
     schema-utils "^2.7.0"
 
-"@ngrx-ducks/core@9.2.1":
-  version "9.2.1"
-  resolved "https://registry.yarnpkg.com/@ngrx-ducks/core/-/core-9.2.1.tgz#04ac795c6e148e36920b2abd3d9da25db476c6d6"
-  integrity sha512-XpX0nM0MNj/wuCbanJWEH1z9ge37lgr2CN2WBUdJ5C3Zrs/YMXIqNh1udRU9su7F8be9vnTH1UE/H8C1+bDrDw==
+"@ngrx-ducks/core@11.0.0-alpha.0":
+  version "11.0.0-alpha.0"
+  resolved "https://registry.yarnpkg.com/@ngrx-ducks/core/-/core-11.0.0-alpha.0.tgz#72c96f7c41ba02abf1ec8f8f207908dca8ca509a"
+  integrity sha512-Kc34zS8Bn0tYj/Jis7Hcwj0v209yg48bms+K2ZRI3qMj2sSkFBTKFifBf9pbWhPx6QTvqoaXIZWbux0d8IyuUQ==
+  dependencies:
+    tslib "^2.1.0"
 
 "@ngrx/effects@12.0.0":
   version "12.0.0"
@@ -2388,25 +2390,10 @@ caniuse-api@^3.0.0:
     lodash.memoize "^4.1.2"
     lodash.uniq "^4.5.0"
 
-caniuse-lite@^1.0.0:
-  version "1.0.30001021"
-  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001021.tgz#e75ed1ef6dbadd580ac7e7720bb16f07b083f254"
-  integrity sha512-wuMhT7/hwkgd8gldgp2jcrUjOU9RXJ4XxGumQeOsUr91l3WwmM68Cpa/ymCnWEDqakwFXhuDQbaKNHXBPgeE9g==
-
-caniuse-lite@^1.0.30000981, caniuse-lite@^1.0.30001109, caniuse-lite@^1.0.30001219:
+caniuse-lite@^1.0.0, caniuse-lite@^1.0.30000981, caniuse-lite@^1.0.30001017, caniuse-lite@^1.0.30001032, caniuse-lite@^1.0.30001043, caniuse-lite@^1.0.30001109, caniuse-lite@^1.0.30001219:
   version "1.0.30001228"
-  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001228.tgz#bfdc5942cd3326fa51ee0b42fbef4da9d492a7fa"
+  resolved "https://registry.npmjs.org/caniuse-lite/-/caniuse-lite-1.0.30001228.tgz"
   integrity sha512-QQmLOGJ3DEgokHbMSA8cj2a+geXqmnpyOFT0lhQV6P3/YOJvGDEwoedcwxEQ30gJIwIIunHIicunJ2rzK5gB2A==
-
-caniuse-lite@^1.0.30001017:
-  version "1.0.30001019"
-  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001019.tgz#857e3fccaad2b2feb3f1f6d8a8f62d747ea648e1"
-  integrity sha512-6ljkLtF1KM5fQ+5ZN0wuyVvvebJxgJPTmScOMaFuQN2QuOzvRJnWSKfzQskQU5IOU4Gap3zasYPIinzwUjoj/g==
-
-caniuse-lite@^1.0.30001032, caniuse-lite@^1.0.30001043:
-  version "1.0.30001062"
-  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001062.tgz#d814b648338504b315222ace6f1a533d9a55e390"
-  integrity sha512-ei9ZqeOnN7edDrb24QfJ0OZicpEbsWxv7WusOiQGz/f2SfvBgHHbOEwBJ8HKGVSyx8Z6ndPjxzR6m0NQq+0bfw==
 
 canonical-path@1.0.0:
   version "1.0.0"
