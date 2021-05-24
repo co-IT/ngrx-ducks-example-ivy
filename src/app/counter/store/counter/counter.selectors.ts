@@ -5,15 +5,13 @@ const visitCounter = createFeatureSelector<State>('counter');
 
 export const currentCount = createSelector(
   visitCounter,
-  counter => counter.simple.count
+  (counter) => counter.simple.count
 );
 
-export const currentCountPlus2 = createSelector(
-  visitCounter,
-  (counter, props: { offset: number }) => counter.simple.count + props.offset
-);
+export const currentCountWithOffset = (offset: number) =>
+  createSelector(visitCounter, (counter) => counter.simple.count + offset);
 
 export const isLoading = createSelector(
   visitCounter,
-  counter => counter.simple.isLoading
+  (counter) => counter.simple.isLoading
 );

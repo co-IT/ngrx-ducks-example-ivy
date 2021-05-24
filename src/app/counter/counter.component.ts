@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Observable } from 'rxjs';
-import { CounterFacade, currentCountPlus2 } from './store/counter';
+import { CounterFacade } from './store/counter';
 
 @Component({
   selector: 'counter',
@@ -9,7 +9,7 @@ import { CounterFacade, currentCountPlus2 } from './store/counter';
 })
 export class CounterComponent {
   count$: Observable<number>;
-  countPlus2$: Observable<number>;
+  countWithOffset$: Observable<number>;
 
   isLoading$: Observable<boolean>;
 
@@ -19,9 +19,7 @@ export class CounterComponent {
     this.count$ = this.counter.select.currentCount;
     this.isLoading$ = this.counter.select.isLoading;
 
-    this.countPlus2$ = this.counter.pick(currentCountPlus2, {
-      offset: 2,
-    });
+    this.countWithOffset$ = this.counter.select.currentCountWithOffset(2);
   }
 
   increment() {

@@ -13,10 +13,7 @@ import { CounterState } from './counter.state';
 @StoreFacade()
 export class CounterFacade {
   pick = usePick();
-  select = bindSelectors({
-    currentCount: selectors.currentCount,
-    isLoading: selectors.isLoading,
-  });
+  select = bindSelectors(selectors);
 
   /**
    *

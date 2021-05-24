@@ -1372,10 +1372,10 @@
     merge-source-map "^1.1.0"
     schema-utils "^2.7.0"
 
-"@ngrx-ducks/core@12.0.0":
-  version "12.0.0"
-  resolved "https://registry.yarnpkg.com/@ngrx-ducks/core/-/core-12.0.0.tgz#d819ae0ff181e0b90f4682cdf95b470da8e3a4af"
-  integrity sha512-Nf0bChiDEyq8HOKdES3TWb1DYDynuUzye+kpTsOPRQGKCBijMdqnWXOJzMP58cEKJwyU1cAPT/UBhosgkjcwAg==
+"@ngrx-ducks/core@12.1.0":
+  version "12.1.0"
+  resolved "https://registry.yarnpkg.com/@ngrx-ducks/core/-/core-12.1.0.tgz#da1738c5f16dc2d5cc0c5325d9f509e800b4287a"
+  integrity sha512-SdgdyM996eOenpE532lvSUi9QcdyPbjTBtm8g170NtVgbD/WZSYkd/C1bj+BgeIDvhp0b3Nmg/v4MF1B2q50ug==
   dependencies:
     "@ngrx-ducks/schematics" ">= 9.0.0"
     tslib "^2.1.0"

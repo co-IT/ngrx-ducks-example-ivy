@@ -2,7 +2,7 @@
 
 <div class="counter">
   <div class="count">{{ count$ | async }}</div>
-  <small>Plus 2: {{ countPlus2$ | async }}</small>
+  <small>Plus 2: {{ countWithOffset$ | async }}</small>
   <div class="counter-actions">
     <button (click)="increment()">Increment</button>
     <button (click)="decrement()">Decrement</button>
