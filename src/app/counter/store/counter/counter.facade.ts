@@ -10,8 +10,16 @@ import {
 import * as selectors from './counter.selectors';
 import { CounterState } from './counter.state';
 
+const initialState = {
+  count: 0,
+  isLoading: true,
+};
+
 @StoreFacade()
 export class CounterFacade {
+  static actions = getActions(CounterFacade);
+  static reducer = getReducer(initialState, CounterFacade);
+
   pick = usePick();
   select = bindSelectors(selectors);
 
@@ -64,11 +72,3 @@ export class CounterFacade {
     }),
   };
 }
-
-const initialState = {
-  count: 0,
-  isLoading: true,
-};
-
-export const counterReducer = getReducer(initialState, CounterFacade);
-export const counterActions = getActions(CounterFacade);

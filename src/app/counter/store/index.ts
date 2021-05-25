@@ -1,5 +1,5 @@
 import { Action, combineReducers, MetaReducer } from '@ngrx/store';
-import { counterReducer, CounterState } from './counter';
+import { CounterFacade, CounterState } from './counter';
 
 export interface State {
   simple: CounterState;
@@ -7,7 +7,7 @@ export interface State {
 
 export function reducers(state: State, action: Action) {
   return combineReducers<State>({
-    simple: counterReducer,
+    simple: CounterFacade.reducer,
   })(state, action);
 }
 
